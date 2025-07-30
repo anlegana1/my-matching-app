@@ -66,7 +66,7 @@ return (
                         e.target.value
                       )
                     }
-                    className="w-full border px-4 py-2 rounded-md text-sm"
+                   className="w-full border px-4 py-2 rounded-full text-sm"  
                   >
                     <option value="">Select</option>
                     {options[i].map((opt, j) => (
@@ -81,7 +81,7 @@ return (
 
             <button
               onClick={step === 1 ? handleNext : handleSubmit}
-              className="mt-8 w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-md"
+              className="mt-12 w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-md"
             >
               {step === 1 ? 'Next' : 'See Compatibility'}
             </button>
